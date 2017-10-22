@@ -1,7 +1,0 @@
-
-.MenuComponent {
-	display: flex;
-	flex-flow: wrap;
-	/*flex-wrap: wrap;*/
-	width: 700px;
-}
