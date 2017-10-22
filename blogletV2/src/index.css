@@ -1,0 +1,237 @@
+/* BEGIN: Meyer's Reset */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* END: Meyer's Reset */
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.DefaultPageLayout-header {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.DefaultPageLayout h1 {
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.DefaultPageLayout main {
+  padding: 10px;
+}
+
+.IndexPage-loadingMessage,
+.ArticlePage-loadingMessage {
+  animation: blink 1.5s linear infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.ArticleComponent {
+}
+
+.IndexPage .ArticleComponent,
+.AuthorPage .ArticleComponent {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+.ArticleComponent-title {
+  font-weight: bold;
+}
+
+.ArticleComponent-author {
+  font-size: 75%;
+  margin: 5px 0;
+}
+
+.ArticleComponent-author span:first-child {
+  margin-right: 5px;
+}
+
+.ArticleComponent-description {
+  margin-top: 15px;
+}
+
+.ArticlePage .ArticleComponent-description {
+  font-size: 80%;
+  font-style: italic;
+}
+
+.ArticleComponent-body {
+  margin-top: 10px;
+}
+
+.DefaultPageLayout-mainContent {
+  margin: 0 100px;
+}
+
+.DefaultPageLayout-siteName a {
+  text-decoration: none;
+  color: white;
+}
+
+.NotFoundPage p {
+  margin: 50px;
+  padding: 50px;
+  background-color: red;
+  color: white;
+  font-size: 120%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.AuthorPage h3 {
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 80%;
+  margin-top: 20px;
+}
+
+.AuthorPage h3:first-child {
+  margin-top: 5px;
+}

@@ -1,0 +1,106 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.IndexPage {
+  padding: 10px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.NoteListItem {
+  /*background-color: silver;*/
+  border-bottom: 1px solid silver;
+}
+
+.NoteListItem:last-child {
+  border: none;
+}
+
+.NoteListItem a {
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.NoteListItem.selected {
+  background: yellow;
+}
+
+.NoteEditor-titleInput {
+  padding: 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid gray;
+  margin-bottom: 10px;
+}
+
+.NoteEditor-bodyInput {
+  padding: 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+  width: 100%;
+  border-color: 1px solid gray;
+  margin-bottom: 10px;
+  font-family: monospace;
+  height: 300px;
+}
+
+.NoteEditor-saveButton {
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 12px;
+  background-color: darkslateblue;
+  color: white;
+  text-transform: uppercase;
+}
+
+.NoteEditor-deleteButton {
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 12px;
+  background-color: lightcoral;
+  color: white;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.DefaultPageLayout {
+  display: flex;
+  height: 100%;
+}
+
+.NoteList {
+  border-right: 1px solid silver;
+  margin-right: 10px;
+  width: 300px;
+}
+
+.NoteEditor {
+  flex: 1;
+}
+
+.NoteList-loadingMessage {
+  animation: blink 1.5s linear infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.NoteList-emptyMessage {
+  font-style: italic;
+}

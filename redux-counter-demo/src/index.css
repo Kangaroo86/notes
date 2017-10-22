@@ -1,0 +1,48 @@
+html,
+body,
+#root,
+.App {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  background-color: gray;
+  align-items: flex-start;
+}
+
+.Counter {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+}
+
+.Counter-count {
+  font-size: 300%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.Counter-buttons {
+  display: flex;
+}
+
+.Counter-buttons button {
+  font-size: 150%;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  width: 40px;
+}
+.Counter-buttons button:first-child {
+  background-color: blue;
+  margin-right: 5px;
+}
+
+.Counter-buttons button:last-child {
+  background-color: red;
+  margin-left: 5px;
+}
