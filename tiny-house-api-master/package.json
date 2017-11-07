@@ -1,0 +1,42 @@
+{
+  "name": "tiny-house-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "env.js",
+  "scripts": {
+    "knex": "knex",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/analuzac/tiny-house-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/analuzac/tiny-house-api/issues"
+  },
+  "homepage": "https://github.com/analuzac/tiny-house-api#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "boom": "^6.0.0",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "express-boom": "^2.0.0",
+    "express-content-type-override": "^1.1.0",
+    "express-jwt": "^5.3.0",
+    "jsonwebtoken": "^8.1.0",
+    "knex": "^0.13.0",
+    "morgan": "^1.9.0",
+    "pg": "^7.3.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.10.0",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.12.1",
+    "supertest": "^3.0.0"
+  }
+}
